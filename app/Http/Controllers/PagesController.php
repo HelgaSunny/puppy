@@ -20,5 +20,14 @@ class PagesController extends Controller
     {
         return view('login');
     }
-    //
+
+    public function pet()
+    {
+        return view('pet');
+    }
+
+    public function owner()
+    {
+        return view('owner');
+    }
 }
