@@ -2,6 +2,8 @@
 
 @section('head title','Welcome to the Pet for rent space! We hope you\'ll enjoy your experience!')
 
+@section('project','Welcome to Pet for Rent!')
+
 @section('links')
     <div class="links">
         <a href="https://laravel.com/docs">Docs</a>
