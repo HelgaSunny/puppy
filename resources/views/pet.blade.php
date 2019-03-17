@@ -1,3 +1,3 @@
 @extends('layout')
 
-@section('project','Pet')
+@section('project','Pet\'s page')
