@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@extends('title','Register for some Pet Love')
+@section('title','Register for some Pet Love')
 {{--{{ config('Pet for weeknd') }}--}}
 
 @section('content')
