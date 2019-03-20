@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@extends('title','Register for some Pet Love')
+{{--{{ config('Pet for weeknd') }}--}}
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
