@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{--<title>{{ config('app.name', 'Congratulations! You\'re in!') }}</title>--}}
-    <title>{{ config('Pet for weeknd') }}</title>
+    <title>@yield('title','Pet for rent App') </title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
