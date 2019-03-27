@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PetController extends Controller
+class PetsController extends Controller
 {
+
+
     //
 }

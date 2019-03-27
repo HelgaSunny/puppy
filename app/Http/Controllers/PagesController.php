@@ -11,9 +11,9 @@ class PagesController extends Controller
         return view('welcome');
     }
 
-    public function about()
+    public function dashboard()
     {
-        return view('about');
+        return view('dashboard');
     }
 
     public function login()

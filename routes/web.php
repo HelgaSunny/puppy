@@ -16,7 +16,8 @@ Route::get('/login','PagesController@login');
 Route::get('/pet','PagesController@pet');
 Route::get('/owner','PagesController@owner');
 Route::get('/about','PagesController@about');
+Route::get('/dashboard','PagesController@dashboard');
 
 Auth::routes(); //Authentication from Controllers\Auth
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
