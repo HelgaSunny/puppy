@@ -16,11 +16,6 @@ class CreateOwnersTable extends Migration
         Schema::create('owners', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('user_id');
-            $table->string('first_name')->nullable();
-            $table->string('last_name')->nullable();
-            $table->string('country')->nullable();
-            $table->string('city')->nullable();
-            $table->string('address')->nullable();
             $table->timestamps();
         });
     }

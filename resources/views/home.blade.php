@@ -14,7 +14,13 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Welcome! How are you today?
+                </div>
+
+                <div class="card-body">
+                    {{--@foreach()--}}
+                        Foreach Loop here
+                    {{--@endforeach--}}
                 </div>
             </div>
         </div>
