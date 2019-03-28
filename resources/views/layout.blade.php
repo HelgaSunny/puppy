@@ -89,7 +89,8 @@
             @yield('project','Pet for rent')
         </div>
 
-        @yield ('links')
+        @yield ('content links')
+        @yield('container content')
     </div>
 </div>
 </body>

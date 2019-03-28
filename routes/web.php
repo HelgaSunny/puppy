@@ -21,3 +21,5 @@ Route::get('/dashboard','PagesController@dashboard');
 Auth::routes(); //Authentication from Controllers\Auth
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+Route::resource('pets','PetsController');
