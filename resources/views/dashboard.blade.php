@@ -18,9 +18,20 @@
                 </div>
 
                 <div class="card-body">
-                    {{--@foreach()--}}
-                        Foreach Loop here
-                    {{--@endforeach--}}
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Pet</th>
+                            <th></th>
+                            <th></th>
+                            @foreach($pets as $pet)
+                                <th>{{$pet->per_nickname}}</th>
+                                <th><a href="/pets/{{$pet->id}}/edit" class="btn btn-sm">Edit Pet info</a></th>
+                                <th></th>
+                                Foreach Loop here
+                            @endforeach
+                        </tr>
+                    </table>
+
                 </div>
             </div>
         </div>
