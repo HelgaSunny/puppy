@@ -19,17 +19,17 @@
 
                 <div class="card-body">
                     <table class="table table-striped">
-                        <tr>
-                            <th>Pet</th>
-                            <th></th>
-                            <th></th>
-                            @foreach($pets as $pet)
-                                <th>{{$pet->per_nickname}}</th>
-                                <th><a href="/pets/{{$pet->id}}/edit" class="btn btn-sm">Edit Pet info</a></th>
-                                <th></th>
-                                Foreach Loop here
-                            @endforeach
-                        </tr>
+                        {{--<tr>--}}
+                            {{--<th>Pet</th>--}}
+                            {{--<th></th>--}}
+                            {{--<th></th>--}}
+                        {{--</tr>--}}
+                        @foreach($pets as $pet)
+                            <tr>
+                                <th>{{$pet->pet_nickname}}</th>
+                                <td> <a href="/pets/{{$pet->id}}/edit" class="btn btn-block">Edit {{$pet->pet_nickname}}'s info</a></td>
+                            </tr>
+                        @endforeach
                     </table>
 
                 </div>
