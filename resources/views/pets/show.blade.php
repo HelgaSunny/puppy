@@ -2,8 +2,10 @@
 
 @section('content links')
     Pets SHOW <br>
-    <a href="/pets/{{$pet->id}}/edit">Edit {{ $pet-> pet_nickname}}'s info</a>
-    <br>
+    @if(!Auth::guest())
+        <a href="/pets/{{$pet->id}}/edit">Edit {{ $pet-> pet_nickname}}'s info</a>
+        <br>
+    @endif
 @endsection
 
 @section('container content')

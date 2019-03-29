@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class PetsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth',['except' => ['index','show']]);
+    }
+
     public function index()
     {
         $pets = Pet::all();
@@ -44,7 +49,7 @@ class PetsController extends Controller
 
     public function update(Pet $pet)
     {
-        $pet >update(request(['pet_name','pet_type','pet_about']));
+        $pet->update(request(['pet_name','pet_type','pet_about']));
 
         return redirect('/pets');
     }
