@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateOwnersPetsTable extends Migration
+class CreateHostsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreateOwnersPetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('owners_pets', function (Blueprint $table) {
+        Schema::create('hosts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('user_id');
+            $table->integer('pet_id');
+            $table->date('host_start');
+            $table->date('host_end');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateOwnersPetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('owners_pets');
+        Schema::dropIfExists('owners');
     }
 }
