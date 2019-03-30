@@ -49,7 +49,7 @@ class PetsController extends Controller
 
     public function update(Pet $pet)
     {
-        $pet->update(request(['pet_name','pet_type','pet_about']));
+        $pet->update(request(['pet_nickname','pet_type','pet_about']));
 
         return redirect('/pets');
     }
