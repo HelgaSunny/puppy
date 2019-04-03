@@ -8,16 +8,16 @@
         {{csrf_field()}}
 
         <div class="field">
-            <label class="label" for="title">Pet Name</label>
+            <label class="label" for="pet_nickname">Pet Name</label>
             <div class="control">
-                <input type="text" class="input" name="title" placeholder="Pet Title" value="{{ $pet->pet_nickname }}">
+                <input type="text" class="input" name="pet_nickname" placeholder="Pet Title" value="{{ $pet->pet_nickname }}">
             </div>
         </div>
 
         <div class="field">
-            <label class="label" for="description">Pet About</label>
+            <label class="label" for="pet_about">Pet About</label>
             <div class="control">
-                <textarea name="description" class="textarea">{{ $pet->pet_about }}</textarea>
+                <textarea name="pet_about" class="textarea">{{ $pet->pet_about }}</textarea>
             </div>
         </div>
 

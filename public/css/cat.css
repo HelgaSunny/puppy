@@ -1,0 +1,70 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: #E3BF9B;
+}
+
+:root{
+    --eye-color: #22161D;
+    --eye: #F3F3F4;
+    --nose: #D2A4B8;
+    --head: #482133;
+    --ear: #3D222B;
+    --inner-ear: #903B5A;
+    --body: #452435;
+    --bow-darker: #A83D52;
+}
+
+.cat-container{
+    display: flex;
+    justify-content: center;
+}
+
+.cat-pupils{
+    stroke: var(--eye-color);
+    fill: var(--eye-color);
+}
+
+.cat-eye{
+    stroke: var(--eye);
+    fill: var(--eye);
+}
+
+#cat-nose{
+    stroke: var(--head);
+    fill: var(--nose);
+}
+
+#cat-head{
+    stroke: none;
+    fill: var(--head);
+}
+
+#cat-ribbon{
+    fill: url(#grad2);
+}
+
+.cat-ear{
+    stroke: var(--ear);
+    fill: var(--ear);
+}
+
+.cat-inner-ear{
+    stroke: none;
+    fill: var(--inner-ear);
+}
+
+#cat-body{
+    stroke: none;
+    fill: var(--body);
+}
+
+.cat-bow{
+    stroke: var(--bow-darker);
+    fill: var(--bow-darker);
+}
+
+.cat-bowie{
+    stroke: none;
+    fill: var(--bow-darker);
+}

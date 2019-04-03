@@ -9,7 +9,11 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
+    <!-- Scripts -->
+    @yield('add scripts')
+
     <!-- Styles -->
+    @yield('add styles')
     <style>
         html, body {
             background-color: #fff;
@@ -92,6 +96,7 @@
         @yield ('content links')
         @yield('container content')
     </div>
+    @yield('container past-content')
 </div>
 </body>
 </html>
